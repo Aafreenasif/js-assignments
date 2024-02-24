@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+    <script>
+        document.write("<h1> Assignment 6 </h1>")
+        document.write("<h3> Result </h3>")
+        var a = 10
+        document.write("<p> The value of a is:" + a + "</p>")
+        document.write("<p> The value of ++a is:" + ++a + "</p>")
+        document.write("<p> Now value is:" + a + "</p>")
+        document.write("<p> The value of a++ is:", a++)
+        document.write("<p> Now the value a is:" + a + "</p>")
+        document.write("<p> The value of --a is:" + --a + "</p>")
+        document.write("<p> Now the value of a is:" + a + "<p/>")
+        document.write("<p> the value of a-- is:" + a-- + "</p>")
+        document.write("<p> Now the value is:" + a + "</p>")
+
+        document.write("<h2> Question no 2 </h2>")
+        var a = 2;
+        var b = 1;
+        --a
+        document.write("<p> The ans of --a is:" + a + "</p>")
+        var $b = --b;
+        document.write("<p> The value of of --b is:" + $b + "</p>")
+        var aminusb = a - b;
+        document.write("<p> Now the value of --a - --b  is:", aminusb + "</p>")
+        var $b = ++b;
+        document.write("<p> The value of ++b is:" + $b)
+        document.write("<p> now the value of  --a - --b + ++b is:", aminusb + b, "</p>")
+        var temp = b;
+        ++b;
+        document.write("Now the value of --a - --b + ++b + b-- is:", aminusb + b + temp, "</p>")
+
+        document.write(" <p> Value of a:", a + "</p>"); // Output: -1
+        document.write(" <p> Value of b:", b + "</p>"); // Output: -1
+        document.write(" <p> Result is:", aminusb + b + temp, "</p>"); // Output: 4
+        document.write("<h2> Question no 3 prompt </h2>")
+        var Name = prompt("Plz enter your name")
+        alert("hello " + Name + " Welcome! Thanks for opening this page")
+        var CityName = prompt("Enter your city name", "Karachi");
+        if (CityName === "Karachi") {
+            alert("Welcome to the city of light");
+        }
+        else {
+            alert("Welcome")
+
+        }
+        var budget = prompt("Enter your budget (low,high,medium)")
+        var operatingSystem = prompt("Enter the type of operating system u want (Andriod,ios)")
+        var cameraQuality = prompt("Enter your preffered camera quality (basic,moderate,high)")
+        var batteryLife = prompt("Enter your preffered battery life (short,average,long)")
+        var screenSize = prompt(" Enter your preffered screen size (Small, medium ,large)")
+
+        if (budget === "low") {
+            if (operatingSystem === "andriod") {
+                if (cameraQuality === "basic" && batteryLife === "average" && screenSize === "large") {
+                    alert("Recommended phone is: Xiaomi Redmi 9A")
+                }
+                else if (cameraQuality === "high" && batteryLife === "long" && screenSize === "large") {
+                    alert("  Recommended phone is: Samsung Galaxy A01")
+                }
+                else if (cameraQuality === "moderate" && batteryLife === "short" && screenSize === "medium") {
+                    alert("Recommended phone is:Nokia lumia 520")
+
+                }
+                else if (cameraQuality === "high" && batteryLife === "short" && screenSize === "small") {
+                    alert(" Recommended phone is: Huawei Ascend")
+                }
+
+
+                else {
+                    alert("Invalid operating system preference.")
+                }
+
+            }
+        }
+        if (budget === "medium") {
+            if (operatingSystem === "ios") {
+                if (cameraQuality === "high" && batteryLife === "long" && screenSize === "medium") {
+                    alert(" Recommended phone is: Iphone 7 plus")
+                }
+
+                else if (cameraQuality === "moderate" && batteryLife === "short" && screenSize === "small") {
+                    alert("Recommended phone is: Iphone SE")
+                }
+
+                else if (cameraQuality === "basic" && batteryLife === "average" && screenSize === "large") {
+                    alert("Recommended phone is: Iphone XR")
+                }
+
+                else if (cameraQuality === "high" && batteryLife === "short" && screenSize === "large") {
+                    alert("Recommended phone is:Iphone 8")
+                }
+                else {
+                    alert("Invalid operating system preference.")
+                }
+            }
+        }
+        if (budget === "high") {
+            if (operatingSystem === "ios") {
+                if (cameraQuality === "high" && batteryLife === "long" && screenSize === "large") {
+                    alert("Recommended phone is: iPhone 13 Pro")
+                }
+
+                else if (cameraQuality === "moderate" && batteryLife === "long" && screenSize === "medium") {
+                    alert("Recommended phone is: iPhone 13 mini ")
+                }
+                else if (cameraQuality === "basic" && batteryLife === "average" && screenSize === "medium") {
+                    alert("Recommended phone is: Iphone 11 pro")
+                }
+                else{
+                    alert("Invalid operating system preference.") }
+
+
+               
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
